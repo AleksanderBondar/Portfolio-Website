@@ -1,5 +1,8 @@
 ---
-title: Tytuł 2
-description: Opis 2
-imgPath: /images/photos/photo2.jpg
+title: Turcja
+description: Leniwy turecki zachód słońca.
+imgPath: /images/photos/photo2.JPG
+lat: 36.464560346027525
+lng: 32.12017289461212
+name: Turcja
 ---

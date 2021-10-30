@@ -5,7 +5,9 @@ module.exports = {
             backgroundImage: {},
             variants: {},
             colors: {},
-            spacing: {},
+            spacing: {
+                384: '384px',
+            },
             fontFamily: {},
         },
     },

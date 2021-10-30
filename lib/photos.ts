@@ -15,6 +15,10 @@ export const getAllPhotos = () => {
             title: string;
             description: string;
             imgPath: string;
+            className: string;
+            lat: number;
+            lng: number;
+            name: string;
         };
     });
     return withGrayMatter;

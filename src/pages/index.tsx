@@ -1,14 +1,38 @@
 import React from 'react';
 import { Header } from '../components/molecules/Header';
-import PhotosSite from '../components/molecules/PhotoSite';
 import { Layout } from '../layouts/layout';
+import { getAllPhotos } from '@/lib/photos';
+import { InferGetStaticPropsType } from 'next';
+import { Photos } from '../components/atoms/Photos';
+const Wrapper: React.FC = ({ children }) => <div className="flex flex-wrap">{children}</div>;
+export const getStaticProps = () => {
+    return {
+        props: {
+            content: getAllPhotos(),
+        },
+    };
+};
 
 
-const HomePage = () => {
+const HomePage = ({ content }: InferGetStaticPropsType<typeof getStaticProps>) => {
+    let i = 0;
     return (
         <Layout title="HomePage">
             <Header />
-            <PhotosSite content={[]} />
+            <Wrapper>
+                {content.map((photo) => {
+                        return (
+                            <Photos
+                                title={photo.title}
+                                description={photo.description}
+                                imgPath={photo.imgPath}
+                                lat={photo.lat}
+                                lng={photo.lng}
+                                name={photo.name}
+                            ></Photos>
+                        );
+                })}
+            </Wrapper>
         </Layout>
     );
 };
