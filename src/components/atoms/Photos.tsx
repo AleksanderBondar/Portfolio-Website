@@ -6,7 +6,7 @@ const WrapperBackground: React.FC = ({ children }) => (
     <div className="bg-black rounded-3xl w-96 mt-10 mb-10 pb-4 mx-auto">{children}</div>
 );
 const WrapperObjects: React.FC = ({ children }) => <div className="flex flex-wrap">{children}</div>;
-const WrapperObjects1: React.FC = ({ children }) => <div className="flex flex-row mx-auto">{children}</div>;
+const WrapperObjects1: React.FC = ({ children }) => <div className="mx-auto">{children}</div>;
 const WrapperText: React.FC = ({ children }) => <div className="flex flex-col mt-4">{children}</div>;
 
 const WrapperTitle: React.FC<{ title: string }> = ({ title }) => <div className="text-white text-3xl text-center">{title}</div>;
