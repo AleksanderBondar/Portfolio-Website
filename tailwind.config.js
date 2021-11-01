@@ -8,6 +8,7 @@ module.exports = {
             spacing: {
                 384: '384px',
                 '20/100': '20%',
+                101: '30rem',
             },
             fontFamily: {},
             keyframes: {
@@ -23,7 +24,7 @@ module.exports = {
                     'fade-in-down': {
                         '0%': {
                             opacity: '0',
-                            transform: 'translateY(-10px)',
+                            transform: 'translateY(-40px)',
                         },
                         '100%': {
                             opacity: '1',
@@ -60,7 +61,7 @@ module.exports = {
                             transform: 'translateY(10px)',
                         },
                     },
-                    'wiggle': {
+                    wiggle: {
                         '0%, 100%': {
                             transform: 'rotate(-3deg)',
                         },
@@ -72,11 +73,11 @@ module.exports = {
             },
             animation: {
                 'fade-in-down': 'fade-in-down 0.5s ease-out',
-                'fade-in-down': 'fade-in-down 0.5s ease-out',
+                'fade-in-down': 'fade-in-down 2s ease-out',
                 'fade-out-down': 'fade-out-down 0.5s ease-out',
                 'fade-in-up': 'fade-in-up 0.5s ease-out',
                 'fade-out-up': 'fade-out-up 0.5s ease-out',
-                'wiggle': 'wiggle 1s ease-in-out infinite',
+                wiggle: 'wiggle 1s ease-in-out infinite',
             },
         },
     },

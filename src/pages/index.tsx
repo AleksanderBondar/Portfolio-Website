@@ -8,7 +8,7 @@ const PageTitle: React.FC = ({ children }) => <div className="text-5xl text-cent
 const HomePage = () => {
     return (
         <Layout title="HomePage">
-            <Header />
+            <Header isHomePage={true}/>
             <PageTitle>Technologie które wykorzystuje:</PageTitle>
             <Techbar images={[]}/>
         </Layout>

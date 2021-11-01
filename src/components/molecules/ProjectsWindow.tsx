@@ -1,21 +1,18 @@
 import React from 'react';
 import { Header } from '../components/molecules/Header';
 import { Layout } from '../layouts/layout';
-import { getAllPhotos } from '@/lib/photos';
 import { InferGetStaticPropsType } from 'next';
-import { Photos } from '../components/atoms/Photos';
-const Wrapper: React.FC = ({ children }) => <div className="flex flex-wrap">{children}</div>;
-const PageTitle: React.FC = ({ children }) => (
-    <div className="text-5xl text-center mt-4 font-black animate-fade-in-down">{children}</div>
-);
+import { getAllProjects } from '@/lib/projects';
+
+const Wrapper: React.FC = ({ children }) => <div className="flex flex-wrap animate-fade-in-down">{children}</div>;
+const PageTitle: React.FC = ({ children }) => <div className="text-5xl text-center mt-4 font-black">{children}</div>;
 export const getStaticProps = () => {
     return {
         props: {
-            content: getAllPhotos(),
+            content: getAllProjects(),
         },
     };
 };
-
 
 const AboutMe = ({ content }: InferGetStaticPropsType<typeof getStaticProps>) => {
     return (
