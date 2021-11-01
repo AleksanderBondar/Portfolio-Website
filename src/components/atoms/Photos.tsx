@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Maps } from '../molecules/Maps';
+import { addImagePrefix } from '@/src/utils';
 
 const WrapperBackground: React.FC = ({ children }) => (
     <div className="bg-black rounded-3xl w-101 mt-10 mb-10 pb-4 mx-auto animate-fade-in-down">{children}</div>
@@ -16,7 +17,7 @@ const WrapperDescription: React.FC<{ description: string }> = ({ description }) 
     <div className="text-white text-xl h-16 text-center w-96">{description}</div>
 );
 const WrapperImage: React.FC<{ src: string }> = ({ children, src }) => (
-    <img className="w-full h-80 rounded-t-3xl" src={src}>
+    <img className="w-full h-80 rounded-t-3xl" src={addImagePrefix(src)}>
         {children}
     </img>
 );
