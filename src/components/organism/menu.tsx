@@ -17,12 +17,12 @@ export const Menu = () => {
                 </Link>
             </WrapperLi>
             <WrapperLi>
-                <Link href="/Projects">
+                <Link href="Projects">
                     <a>Projekty</a>
                 </Link>
             </WrapperLi>
             <WrapperLi>
-                <Link href="/AboutMe">
+                <Link href="AboutMe">
                     <a>O mnie</a>
                 </Link>
             </WrapperLi>
