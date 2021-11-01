@@ -6,9 +6,13 @@ module.exports = {
             variants: {},
             colors: {},
             spacing: {
+                84: '21rem',
+                90: '22rem',
+                94: '23rem',
                 384: '384px',
                 '20/100': '20%',
                 101: '30rem',
+
             },
             fontFamily: {},
             keyframes: {
