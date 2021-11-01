@@ -31,7 +31,7 @@
         "react-scripts": "^4.0.3",
         "react-spring": "^9.2.5",
         "remark": "^12.0.0",
-        "remark-html": "^12.0.0",
+        "remark-html": "^15.0.0",
         "rerousel": "^0.1.9",
         "steamapi": "^2.2.0",
         "swr": "^1.0.1"
