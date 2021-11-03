@@ -17,7 +17,7 @@ const HomePage = () => {
             <Header isHomePage={true} />
             <PageTitle>Technologie które wykorzystuje:</PageTitle>
             <Techbar images={[]} />
-            <Grid className="mx-auto mt-5" width={800} columns={3} fetchGifs={fetchGifs} />
+            <Grid className="mx-auto mt-5 max-w-full" width={1500} columns={6} fetchGifs={fetchGifs} />
         </Layout>
     );
 };
