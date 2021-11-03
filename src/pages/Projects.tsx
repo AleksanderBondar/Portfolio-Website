@@ -9,7 +9,7 @@ const Projects = () => {
         <Layout title="Projects">
             <Header />
             <PageTitle>Realizowane projekty:</PageTitle>
-            
+
         </Layout>
     );
 };
