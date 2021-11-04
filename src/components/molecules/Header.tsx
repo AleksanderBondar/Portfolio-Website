@@ -13,6 +13,7 @@ const WrapperTitle: React.FC = ({ children }) => (
 
 const WrapperDescription: React.FC = ({ children }) => (
     <div className="text-white text-xl w-8/12 animate__animated animate__rotateInUpLeft">{children}</div>
+    
 );
 
 interface HeaderProps {

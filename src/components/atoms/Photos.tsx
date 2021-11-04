@@ -4,9 +4,11 @@ import { Maps } from '../molecules/Maps';
 import { addImagePrefix } from '@/src/utils';
 
 const WrapperBackground: React.FC = ({ children }) => (
-    <div className="bg-black rounded-3xl w-101 mt-10 mb-10 pb-4 mx-auto animate-fade-in-down">{children}</div>
+    <div className="bg-black rounded-3xl w-101 mt-10 mb-4 pb-2 mx-auto animate__animated animate__zoomIn sticky top-0">
+        {children}
+    </div>
 );
-const WrapperObjects: React.FC = ({ children }) => <div className="flex flex-wrap ">{children}</div>;
+const WrapperObjects: React.FC = ({ children }) => <div className="flex flex-wrap">{children}</div>;
 const WrapperObjects1: React.FC = ({ children }) => <div className="mx-auto">{children}</div>;
 const WrapperText: React.FC = ({ children }) => (
     <div className="flex flex-col mt-4">{children}</div>

@@ -2,7 +2,13 @@ module.exports = {
     purge: ['./src/pages/**/*.{ts,tsx}', './src/components/**/*.{ts,tsx}'],
     theme: {
         extend: {
-            backgroundImage: {},
+            backgroundImage: {
+                'arrow-left': 'url("public/images/projects/left-arrow.svg")',
+                'arrow-right': 'url("public/images/projects/right-arrow.svg")',
+                'sticky-note': 'url("public/images/projects/sticky-note.svg")',
+                soon: 'url("public/images/projects/soon.png")',
+                laptop: 'url("public/images/projects/laptop.png")',
+            },
             variants: {},
             colors: {},
             spacing: {
@@ -12,7 +18,11 @@ module.exports = {
                 384: '384px',
                 '20/100': '20%',
                 101: '30rem',
-
+                102: '31rem',
+                103: '32rem',
+                104: '33rem',
+                105: '34rem',
+                106: '35rem',
             },
             fontFamily: {},
             keyframes: {
