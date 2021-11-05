@@ -4,6 +4,7 @@ import Calendar from 'react-calendar';
 import { CalendarWrap } from './CalendarWrap';
 import 'animate.css';
 
+
 const WrapperBackground: React.FC = ({ children }) => <div className="bg-black max-w-full pb-14">{children}</div>;
 const WrapperCard: React.FC = ({ children }) => <div className="flex flex-wrap mx-auto justify-left pl-20 pt-20">{children}</div>;
 const WrapperObjects: React.FC = ({ children }) => <div className="flex flex-col">{children}</div>;
@@ -18,7 +19,6 @@ const WrapperDescription: React.FC = ({ children }) => (
 
 interface HeaderProps {
     isHomePage?: boolean;
-
 }
 
 export const Header: React.FC<HeaderProps> = ({isHomePage}) => {

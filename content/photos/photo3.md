@@ -1,8 +1,8 @@
 ---
-title: Polska
-description: Zachodzące słońce nad Białymstokiem.
+title: Dominikana
+description: Romantyczny wschód słońca.
 imgPath: /images/photos/photo3.JPG
-lat: 53.14051511093224
-lng: 23.136553212811293
-name: Polska
+lat: 18.55325738391624
+lng: -68.36468137058584
+name: Dominikana
 ---

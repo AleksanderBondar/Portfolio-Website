@@ -1,3 +1,4 @@
+import { AppMemory } from '@/src/components/Project_1/App';
 import React from 'react';
 import { Header } from '../../components/molecules/Header';
 import { Layout } from '../../layouts/layout';
@@ -28,6 +29,7 @@ const Projects = () => {
                 </div>
                 <PageTitle>Pierwszy projekt:</PageTitle>
             </div>
+            <AppMemory />
         </Layout>
     );
 };

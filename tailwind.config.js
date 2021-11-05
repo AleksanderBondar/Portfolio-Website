@@ -23,6 +23,7 @@ module.exports = {
                 104: '33rem',
                 105: '34rem',
                 106: '35rem',
+                111: '40rem',
             },
             fontFamily: {},
             keyframes: {
