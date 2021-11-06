@@ -1,7 +1,5 @@
-
-import React, { MouseEventHandler } from 'react';
-
-
+import { addImagePrefix } from '@/src/utils/addImagePrefix';
+import React from 'react';
 
 const CardWrapper: React.FC<{ key: React.Key }> = ({ children, key }) => (
     <div key={key} className="relative">
@@ -16,7 +14,7 @@ const CardFront: React.FC<{ src: string }> = ({ children, src }) => (
 const CardBack: React.FC<{ onClick: React.MouseEventHandler }> = ({ children, onClick }) => (
     <img
         onClick={onClick}
-        src="/images/project1/images/cover.png"
+        src={addImagePrefix("/images/project1/images/cover.png")}
         className="w-full block border-2 rounded-2xl animate__animated animate__flipInY"
     >
         {children}
