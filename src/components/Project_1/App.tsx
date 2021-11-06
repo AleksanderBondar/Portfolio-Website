@@ -5,14 +5,14 @@ import { SingleCard } from './Cards';
 const Background: React.FC = ({children}) =>
  <div className="bg-white w-full">{children}</div>;
 const Wrapper: React.FC = ({ children }) =>
- <div className="flex justify-center">{children}</div>;
+ <div className="flex flex-wrap justify-center">{children}</div>;
 const Button: React.FC<{ onClick: React.MouseEventHandler }> = ({ onClick, children }) => (
-    <button onClick={onClick} className="w-56 h-24 bg-blue-400 mt-20 ml-5 mr-32 shadow-2xl cursor-pointer rounded-2xl hover:opacity-40 hover:shadow-xl">
+    <button onClick={onClick} className="w-56 h-24 bg-blue-400 mt-20 mx-auto shadow-2xl cursor-pointer rounded-2xl hover:opacity-40 hover:shadow-xl">
         {children}
     </button>
 );
 const CardsGrid: React.FC = ({ children }) =>
- <div className="mt-10 grid grid-cols-4 gap-5 mb-10 mr-5">{children}</div>;
+ <div className="mt-10 grid grid-cols-4 gap-5 mb-10">{children}</div>;
 
 const initialValue = [{ src: '', id: 0, matched: false }];
 
@@ -85,7 +85,7 @@ export const AppMemory: React.FC = () =>
     return (
         <Background>
             <Wrapper>
-                <div>
+                <div className="flex flex-col items-center">
                     <Button onClick={shuffleCards as MouseEventHandler}>
                         <div className="my-8 text-center font-bold">New Game</div>
                     </Button>

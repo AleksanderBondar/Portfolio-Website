@@ -7,7 +7,7 @@ import { addHrefPrefix } from '../../utils/addHrefPrefix';
 
 const PageTitle: React.FC = ({ children }) => <div className="text-5xl text-center mt-4 font-black w-9/12">{children}</div>;
 const ProjectLink: React.FC<{ href: string }> = ({ children, href }) => (
-    <a href={href} className="text-sm mt-4 text-blue-700 hover:underline hover:text-blue-400">
+    <a href={href} className="text-sm mt-4 text-blue-700 hover:underline hover:text-blue-400 text-center">
         {children}
     </a>
 );
