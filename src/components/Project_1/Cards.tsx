@@ -15,7 +15,7 @@ const CardBack: React.FC<{ onClick: React.MouseEventHandler }> = ({ children, on
     <img
         onClick={onClick}
         src={addImagePrefix("/images/project1/images/cover.png")}
-        className="w-full block border-2 rounded-2xl animate__animated animate__flipInY"
+        className="w-full block border-2 rounded-2xl animate__animated animate__flipInY cursor-pointer hover:opacity-50"
     >
         {children}
     </img>
