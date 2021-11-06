@@ -6,6 +6,7 @@ module.exports = {
                 'arrow-left': 'url("public/images/projects/left-arrow.svg")',
                 'arrow-right': 'url("public/images/projects/right-arrow.svg")',
                 'sticky-note': 'url("public/images/projects/sticky-note.svg")',
+                project1: 'url("public/images/projects/project1.png")',
                 soon: 'url("public/images/projects/soon.png")',
                 laptop: 'url("public/images/projects/laptop.png")',
             },

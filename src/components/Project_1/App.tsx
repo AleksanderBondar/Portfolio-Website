@@ -1,3 +1,4 @@
+import { addImagePrefix } from '@/src/utils/addImagePrefix';
 import React, { MouseEventHandler, useEffect, useState } from 'react';
 import { SingleCard } from './Cards';
 
@@ -97,7 +98,7 @@ export const AppMemory: React.FC = () =>
                     {cards.map((card) => (
                         <SingleCard
                         id={card.id}
-                        src={card.src}
+                        src={addImagePrefix(card.src)}
                         onClick={()=>handleChoice(card)}
                         flipped={card === choiceOne || card === choiceTwo || card.matched}
                         disabled={disabled}

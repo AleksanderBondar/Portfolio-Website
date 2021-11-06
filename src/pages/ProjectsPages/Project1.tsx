@@ -27,7 +27,7 @@ const Projects = () => {
                         <ArrowLeft></ArrowLeft>
                     </ProjectLink>
                 </div>
-                <PageTitle>Pierwszy projekt:</PageTitle>
+                <PageTitle>Pierwszy projekt "Memory Emotikon Game":</PageTitle>
             </div>
             <AppMemory />
         </Layout>
