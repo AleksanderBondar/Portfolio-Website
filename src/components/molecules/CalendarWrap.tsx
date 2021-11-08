@@ -2,8 +2,6 @@ import styled from "@emotion/styled";
 
 export const CalendarWrap = styled.div`
     .react-calendar {
-        margin: 2rem 5rem 1rem 5rem;
-        max-width: 100%;
         background: transparent;
         border: 3px solid #a0a096;
         font-family: Arial, Helvetica, sans-serif;

@@ -85,11 +85,11 @@ export const AppMemory: React.FC = () =>
     return (
         <Background>
             <Wrapper>
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center mr-2">
                     <Button onClick={shuffleCards as MouseEventHandler}>
                         <div className="my-8 text-center font-bold">New Game</div>
                     </Button>
-                    <div className="flex flex-col w-56 text-center ml-5 mt-10">
+                    <div className="flex flex-col w-56 text-center mt-10">
                         <div> Rozegrane rundy: {turns}</div>
                         <div className="mt-5"> Trafione pary: {passed}</div>
                     </div>
