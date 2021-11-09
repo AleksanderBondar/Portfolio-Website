@@ -1,5 +1,6 @@
 module.exports = {
     purge: ['./src/pages/**/*.{ts,tsx}', './src/components/**/*.{ts,tsx}'],
+    mode: 'jit',
     theme: {
         extend: {
             backgroundImage: {
